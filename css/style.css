@@ -1,0 +1,287 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f5f5;
+  font-family: "DM Sans", sans-serif;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* start bento grid */
+.bento .bento-container {
+  gap: 25px;
+}
+
+.bento .bento-container .first-col {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 230px 230px 250px;
+      grid-template-columns: 230px 230px 250px;
+  -ms-grid-rows: 280px 220px 220px;
+      grid-template-rows: 280px 220px 220px;
+      grid-template-areas: "social social media" "manage schedule media" "growth follower follower";
+  gap: 25px;
+}
+
+.bento .bento-container .first-col .social {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: social;
+  background-color: #7650dc;
+  color: white;
+}
+
+.bento .bento-container .first-col .social h1 {
+  font-size: 3rem;
+}
+
+.bento .bento-container .first-col .social h1 span:first-child {
+  color: #ffcb6b;
+}
+
+.bento .bento-container .first-col .social img {
+  width: 200px;
+}
+
+.bento .bento-container .first-col .social p {
+  font-size: 18px;
+}
+
+.bento .bento-container .first-col .media,
+.bento .bento-container .first-col .manage,
+.bento .bento-container .first-col .schedule {
+  overflow: hidden;
+}
+
+.bento .bento-container .first-col .media {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  grid-area: media;
+  background-color: #dacffc;
+  color: #121212;
+}
+
+.bento .bento-container .first-col .media p {
+  font-weight: 400;
+  line-height: 1;
+}
+
+.bento .bento-container .first-col .media p:first-child {
+  font-size: 1.8rem;
+  line-height: 1;
+  font-weight: 500;
+}
+
+.bento .bento-container .first-col .media img {
+  width: 160%;
+  position: relative;
+  left: 10%;
+  margin: 20px 0;
+}
+
+.bento .bento-container .first-col .manage {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: manage;
+  background-color: white;
+  color: #121212;
+}
+
+.bento .bento-container .first-col .manage p {
+  font-size: 1.6rem;
+  line-height: 1;
+  font-weight: 500;
+}
+
+.bento .bento-container .first-col .manage img {
+  width: 280px;
+  margin: 10px 0;
+  border-radius: 50px;
+  -webkit-box-shadow: 0 5px 5px 5px #fbfafb75;
+          box-shadow: 0 5px 5px 5px #fbfafb75;
+}
+
+.bento .bento-container .first-col .schedule {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: schedule;
+  background-color: #ffcb6b;
+  color: #121212;
+}
+
+.bento .bento-container .first-col .schedule p {
+  font-size: 1.6rem;
+  line-height: 1;
+  font-weight: 500;
+}
+
+.bento .bento-container .first-col .schedule img {
+  position: relative;
+  top: 5%;
+}
+
+.bento .bento-container .first-col .follower {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: follower;
+  background-color: #7650dc;
+  color: white;
+}
+
+.bento .bento-container .first-col .follower img {
+  width: 220px;
+}
+
+.bento .bento-container .first-col .follower p {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.bento .bento-container .first-col .growth {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: growth;
+  background-color: white;
+  color: #121212;
+  position: relative;
+}
+
+.bento .bento-container .first-col .growth p:first-child {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.bento .bento-container .first-col .growth img {
+  width: 150px;
+  position: absolute;
+  bottom: 10%;
+}
+
+@media (max-width: 767px) {
+  .bento .bento-container .first-col {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "social" "manage" "schedule" "media" "follower" "growth";
+  }
+  .bento .bento-container .first-col .social h1 {
+    font-size: 2.5rem;
+  }
+  .bento .bento-container .first-col .manage img {
+    width: 100%;
+  }
+  .bento .bento-container .first-col .media {
+    text-align: center;
+  }
+  .bento .bento-container .first-col .media img {
+    left: 0;
+    width: 100%;
+  }
+  .bento .bento-container .first-col .media p:first-child {
+    font-size: 1.6rem;
+  }
+  .bento .bento-container .first-col .media p {
+    font-size: 18px;
+  }
+  .bento .bento-container .first-col .schedule img {
+    top: 15%;
+  }
+  .bento .bento-container .first-col .growth {
+    height: 230px;
+  }
+  .bento .bento-container .first-col .growth img {
+    width: 180px;
+  }
+  .bento .bento-container .first-col .growth p {
+    font-size: 18px;
+  }
+}
+
+.bento .bento-container .second-col {
+  width: 250px;
+  gap: 25px;
+}
+
+@media (min-width: 767px) and (max-width: 990px) {
+  .bento .bento-container .second-col {
+    width: 770px;
+    height: 450px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .bento .bento-container .second-col {
+    width: 100%;
+  }
+}
+
+.bento .bento-container .second-col div {
+  height: 100%;
+}
+
+.bento .bento-container .second-col .create {
+  background-color: #f9eee1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.bento .bento-container .second-col .create p {
+  font-size: 1.9rem;
+  line-height: 1;
+  font-weight: 500;
+}
+
+.bento .bento-container .second-col .create p span {
+  color: #7650dc;
+  font-style: italic;
+}
+
+.bento .bento-container .second-col .create img {
+  width: 180px;
+}
+
+.bento .bento-container .second-col .content {
+  background-color: #ffcb6b;
+}
+
+.bento .bento-container .second-col .content p {
+  font-size: 1.9rem;
+  line-height: 1;
+  font-weight: 500;
+  padding-right: 50px;
+}
+
+/* end bento grid */
+/*# sourceMappingURL=style.css.map */
