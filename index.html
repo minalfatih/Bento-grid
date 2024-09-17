@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    
+    <link rel="stylesheet" href="css/sass/vendors/aos.css" />
+    <link rel="stylesheet" href="css/sass/vendors/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+    <title>Frontend Mentor | Bento grid</title>
+  </head>
+  <body>
+    <main>
+      <div
+        class="container d-flex justify-content-center align-items-center pt-5 pb-5"
+      >
+        <section class="bento">
+          <div class="bento-container d-flex flex-column flex-lg-row-reverse">
+            <div class="first-col">
+              <div class="social p-5 rounded-3 text-center" data-aos="fade-up">
+                <h1 class="m-0">
+                  Social Media <span>10x</span>
+                  <span class="fst-italic">Faster</span> with AI
+                </h1>
+                <img
+                  class="mt-3 mb-1"
+                  src="./assets/images/illustration-five-stars.webp"
+                  alt="illustration-five-stars"
+                />
+                <p class="m-0">Over 4,000 5-star reviews</p>
+              </div>
+              <div class="manage p-4 rounded-3" data-aos="fade-up">
+                <img
+                  src="./assets/images/illustration-multiple-platforms.webp"
+                  alt="illustration-multiple-platforms"
+                />
+                <p class="m-0">Manage multiple accounts and platforms.</p>
+              </div>
+              <div class="schedule p-4 rounded-3" data-aos="fade-up">
+                <p class="m-0">Maintain a consistent posting schedule.</p>
+                <img
+                  class="img-fluid"
+                  src="./assets/images/illustration-consistent-schedule.webp"
+                  alt="illustration-consistent-schedule"
+                />
+              </div>
+              <div class="media p-4 pt-5 pb-5 rounded-3" data-aos="fade-up">
+                <p class="m-0">Schedule to social media.</p>
+                <img
+                  src="./assets/images/illustration-schedule-posts.webp"
+                  alt="illustration-schedule-posts"
+                />
+                <p class="m-0">
+                  Optimize post timings to publish content at the perfect time
+                  for your audience.
+                </p>
+              </div>
+              <div
+                class="follower p-4 rounded-3 d-flex flex-column flex-md-row justify-content-between align-items-center"
+                data-aos="fade-up"
+              >
+                <img
+                  src="./assets/images/illustration-grow-followers.webp"
+                  alt="illustration-grow-followers"
+                />
+                <p class="m-0 mt-5 mt-md-0 text-center text-md-start">
+                  Grow followers with non-stop content.
+                </p>
+              </div>
+              <div class="growth p-4 rounded-3" data-aos="fade-up">
+                <p class="m-0">>56%</p>
+                <p class="m-0">faster audience growth</p>
+                <img
+                  class="img-fluid"
+                  src="./assets/images/illustration-audience-growth.webp"
+                  alt="illustration-audience-growth"
+                />
+              </div>
+            </div>
+
+            <div
+              class="second-col d-flex flex-column flex-md-row flex-lg-column"
+            >
+              <div class="create p-4 rounded-3" data-aos="fade-up">
+                <p class="m-0 mb-3">
+                  Create and schedule content <span>quicker.</span>
+                </p>
+                <img
+                  src="./assets/images/illustration-create-post.webp"
+                  alt="illustration-create-post"
+                />
+              </div>
+              <div
+                class="content p-4 rounded-3 d-flex flex-column justify-content-between"
+                data-aos="fade-up"
+              >
+                <p class="m-0 mb-3">Write your content using AI.</p>
+                <img
+                  class="img-fluid"
+                  src="./assets/images/illustration-ai-content.webp"
+                  alt="illustration-ai-content"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="js/vendors/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: "ease-in-out-sine",
+      });
+    </script>
+    <script src="js/vendors/bootstrap.bundle.min.js"></script>
+    <script src="js/vendors/all.min.js"></script>
+  </body>
+</html>
